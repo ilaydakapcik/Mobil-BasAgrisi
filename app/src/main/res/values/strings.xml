@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">        Mobil Baş Ağrısı</string>
+    <string name="dialog_title">items available in a shop</string>
+    <string name="ok_label">ok</string>
+    <string name="dismiss_label">dismiss</string>
+    <string name="clear_label">clear all</string>
+    <string-array name="tetikleyici_item">
+        <item>Alkol</item>
+        <item>Çikolata</item>
+        <item>Sigara</item>
+        <item>Stres</item>
+        <item>Sıcaklık</item>
+        <item>Atlanan Öğün</item>
+        <item>Regl Dönemi</item>
+    </string-array>
+    <string-array name="ilac_item">
+        <item>Apranax</item>
+        <item>Dolorex</item>
+        <item>Migrex</item>
+        <item>Parol</item>
+        <item>Arveles</item>
+        <item>Majezik</item>
+        <item>Buscopan</item>
+    </string-array>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/arkaplann"
+    tools:context=".AgriEkle">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="AĞRI BAŞLANGIÇ TARİHİ:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="7pt"
+            android:textColor="@color/siyah"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/baslangıcedt"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/siyah"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="AĞRI BİTİŞ TARİHİ:"
+            android:textSize="7pt"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/siyah"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/bitisedt"
+            android:textColor="@color/siyah"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:text="Ağrı Şiddeti:"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/siyah"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/seekBarValue"
+                android:textColor="@color/siyah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+    </LinearLayout>
+            <SeekBar
+                android:id="@+id/siddetbar"
+                android:outlineSpotShadowColor="@color/siyah"
+                android:layout_marginTop="10dp"
+                android:background="@color/gri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="TETİKLEYİCİLER SEÇ"
+                android:textColor="@color/siyah"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/tetikleyicibtn"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="75dp"
+                android:text="SEÇ"
+                android:background="@color/buton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    <TextView
+        android:id="@+id/tvItemSelected"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="@color/siyah"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="İLAÇ SEÇ"
+            android:textColor="@color/siyah"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/ilacbtn"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="190dp"
+            android:text="SEÇ"
+            android:background="@color/buton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/ilacItemSelected"
+        android:visibility="gone"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="@color/siyah"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/kaydetbtn"
+            android:text="KAYDET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/buton"/>
+
+
+</LinearLayout>
